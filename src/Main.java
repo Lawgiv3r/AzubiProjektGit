@@ -5,7 +5,7 @@ public class Main {
         Output.sayHello();
     }
 
-    public static String help(){
-       return "Dieses Programm nimmt einen Parameter entgegen und gibt diesen aus";
+    public static void help(){
+       System.out.println("Dieses Programm nimmt einen Parameter entgegen und gibt diesen aus"); 
     }
 }
