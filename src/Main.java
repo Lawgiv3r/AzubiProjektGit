@@ -1,9 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        if (args.length > 0) {
-            String parameter = args[0];
+        help();
+        System.out.println("Hello World!");
+        Output.sayHello();
+    }
 
-            System.out.printf("Hello %s!", parameter);
-        }
+    public static void help() {
+        System.out.println("Dieses Programm nimmt einen Parameter entgegen und gibt diesen aus");
     }
 }
