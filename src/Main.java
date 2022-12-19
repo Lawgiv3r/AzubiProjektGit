@@ -1,8 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        help();
-        System.out.println("Hello World!");
-        Output.sayHello();
+        if (args.length > 0) {
+            String parameter = args[0];
+
+            System.out.printf("Hello %s!", parameter);
+        } else {
+            help();
+        }
     }
 
     public static void help() {
