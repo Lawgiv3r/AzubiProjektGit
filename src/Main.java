@@ -4,6 +4,8 @@ public class Main {
             String parameter = args[0];
             Output.sayHello(parameter);
         } else {
+
+            System.out.println("moin");
             help();
         }
     }
