@@ -13,6 +13,8 @@ public class Main {
             System.out.println("moin");
             help();
         }
+
+        sortByAutor(BookDetails.bookDetails()).forEach(System.out::println);
     }
 
     public static void help() {
@@ -21,6 +23,6 @@ public class Main {
 
     public static List<Book> sortByAutor(ArrayList<Book> books) {
         return books.stream()
-                .sorted(Comparator.comparing(Book::getMainCharacter)).collect(Collectors.toList());
+                .sorted(Comparator.comparing(Book::getAuthor)).collect(Collectors.toList());
     }
 }
