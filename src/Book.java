@@ -1,18 +1,18 @@
 public class Book {
     private String name;
-    private String mainCharacter;
+    private String author;
 
     public Book(String name, String mainCharacter) {
         this.name = name;
-        this.mainCharacter = mainCharacter;
+        this.author = mainCharacter;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getMainCharacter() {
-        return mainCharacter;
+    public String getAuthor() {
+        return author;
     }
 
 }
