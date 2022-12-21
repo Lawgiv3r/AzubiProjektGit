@@ -15,4 +15,8 @@ public class Book {
         return author;
     }
 
+    @Override
+    public String toString() {
+        return "Book [name=" + name + ", author=" + author + "]";
+    }
 }
