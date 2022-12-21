@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class Main {
     public static void main(String[] args) {
         if (args.length > 0) {
@@ -14,8 +19,8 @@ public class Main {
         System.out.println("Dieses Programm nimmt einen Parameter entgegen und gibt diesen aus");
     }
 
-    public static List<Book> sortByAutor(ArrayList<Book> books){
-      return  books.stream()
+    public static List<Book> sortByAutor(ArrayList<Book> books) {
+        return books.stream()
                 .sorted(Comparator.comparing(Book::getMainCharacter)).collect(Collectors.toList());
     }
 }
