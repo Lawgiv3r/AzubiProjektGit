@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class BookDetails {
-    public ArrayList<Book> bookDetails(){
+    public static ArrayList<Book> bookDetails() {
         ArrayList<Book> books = new ArrayList<>();
         Book nr1 = new Book("Harry Potter", "J.K. Rowling");
         Book nr2 = new Book("Chronicles of Narnia", "C.S Lewis");
@@ -25,7 +25,7 @@ public class BookDetails {
         books.add(nr9);
         books.add(nr10);
 
-        System.out.println(books.get(1).getName() + books.get(2).getAuthor());
+        // System.out.println(books.get(1).getName() + books.get(2).getAuthor());
         return books;
     }
 }
