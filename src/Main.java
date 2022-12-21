@@ -13,4 +13,9 @@ public class Main {
     public static void help() {
         System.out.println("Dieses Programm nimmt einen Parameter entgegen und gibt diesen aus");
     }
+
+    public static List<Book> sortByAutor(ArrayList<Book> books){
+      return  books.stream()
+                .sorted(Comparator.comparing(Book::getMainCharacter)).collect(Collectors.toList());
+    }
 }
